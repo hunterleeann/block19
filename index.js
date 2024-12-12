@@ -50,6 +50,13 @@ const resetUsers = () => {
   updateDisplay();
 };
 
+const addFreelancerAndUpdate = () => {
+  randGen();
+  updateDisplay();
+};
+
+const intervalId = setInterval(addFreelancerAndUpdate, 5000);
+
 updateDisplay();
 
 addRandomUser.addEventListener("click", randGen);
